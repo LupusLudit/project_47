@@ -7,6 +7,9 @@ public abstract class Flower {
     protected double neededArea;
     protected double chanceOfGrowth;
 
+    /**
+     * Simulates watering a plant
+     * */
     public abstract void water();
 
 

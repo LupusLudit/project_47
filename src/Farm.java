@@ -1,5 +1,6 @@
 import animals.Animal;
 import animals.Size;
+import flowers.Flower;
 
 import java.util.ArrayList;
 
@@ -8,8 +9,14 @@ public class Farm {
     private int bigCount = 0;
     private int smallCount = 0;
 
-    ArrayList<Animal> animals = new ArrayList<>();
+    private int flowerTypeCount = 0;
 
+    ArrayList<Animal> animals = new ArrayList<>();
+    ArrayList<Flower> flowers = new ArrayList<>();
+
+    /**
+     * Simulates purchase of an animal
+     * */
     public void buyAnimal(Animal animal){
         if(animal.getSize() == Size.BIG && bigCount < 10){
             animals.add(animal);
@@ -23,6 +30,9 @@ public class Farm {
         }
     }
 
+    /**
+     * Simulates sale of an animal
+     * */
     public void sellAnimal(int index){
         if(animals.get(index)!= null){
             animals.remove(index);
@@ -32,6 +42,10 @@ public class Farm {
         }
     }
 
+    /**
+     * Pets animal at a certain index
+     * */
+
     public String pet(int index){
         if(animals.get(index)!= null){
             return animals.get(index).pet();
@@ -40,6 +54,6 @@ public class Farm {
 
     }
 
-
+    //I didnt have enough time to finish all the methods
 
 }

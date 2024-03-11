@@ -7,6 +7,9 @@ public abstract class Animal {
     protected Size size;
     protected String specialCare;
 
+    /**
+     * returns a String containing reaction of an animal to the farmers pet
+     * */
     public abstract String pet();
     @Override
     public String toString() {
@@ -18,6 +21,9 @@ public abstract class Animal {
                 '}';
     }
 
+    /**
+     * returns animals size
+     * */
     public Size getSize() {
         return size;
     }
