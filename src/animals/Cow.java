@@ -9,6 +9,11 @@ public class Cow extends Animal{
     }
 
     @Override
+    public String pet() {
+        return name + " says: Moooooooo!";
+    }
+
+    @Override
     public String toString() {
         return "Cow{" +
                 "type='" + type + '\'' +
@@ -17,4 +22,5 @@ public class Cow extends Animal{
                 ", specialCare='" + specialCare + '\'' +
                 '}';
     }
+
 }

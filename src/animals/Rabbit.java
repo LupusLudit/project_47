@@ -8,7 +8,10 @@ public class Rabbit extends Animal{
         this.size = Size.SMALL;
         this.specialCare = "hay bed";
     }
-
+    @Override
+    public String pet() {
+        return name + " says: Chuck chuck hrmm!";
+    }
     @Override
     public String toString() {
         return "Rabbit{" +

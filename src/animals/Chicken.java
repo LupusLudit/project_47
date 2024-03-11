@@ -8,6 +8,10 @@ public class Chicken extends Animal{
         this.size = Size.SMALL;
         this.specialCare = "combing";
     }
+    @Override
+    public String pet() {
+        return name + " says: Cluck cluck!";
+    }
 
     @Override
     public String toString() {

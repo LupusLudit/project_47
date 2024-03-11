@@ -7,7 +7,10 @@ public class Pig extends Animal{
         this.size = Size.BIG;
         this.specialCare = "bathing";
     }
-
+    @Override
+    public String pet() {
+        return name + " says: Qui Qui!";
+    }
     @Override
     public String toString() {
         return "Pig{" +

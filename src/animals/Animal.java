@@ -7,6 +7,7 @@ public abstract class Animal {
     protected Size size;
     protected String specialCare;
 
+    public abstract String pet();
     @Override
     public String toString() {
         return "animals.Animal{" +
@@ -15,5 +16,9 @@ public abstract class Animal {
                 ", size=" + size +
                 ", specialCare='" + specialCare + '\'' +
                 '}';
+    }
+
+    public Size getSize() {
+        return size;
     }
 }
