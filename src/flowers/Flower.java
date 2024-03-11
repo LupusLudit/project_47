@@ -1,3 +1,5 @@
+package flowers;
+
 public abstract class Flower {
 
     protected String name;
@@ -6,7 +8,7 @@ public abstract class Flower {
     protected double chanceOfGrowth;
 
     public String toString() {
-        return "Flower{" +
+        return "flowers.Flower{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
                 ", neededArea=" + neededArea +
