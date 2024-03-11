@@ -10,6 +10,13 @@ public class Sunflower extends Flower{
     }
 
     @Override
+    public void water() {
+        if(chanceOfGrowth + 0.025 < 1){
+            chanceOfGrowth += 0.025;
+        }
+    }
+
+    @Override
     public String toString() {
         return "Sunflower{" +
                 "name='" + name + '\'' +

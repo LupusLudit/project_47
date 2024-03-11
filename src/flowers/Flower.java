@@ -7,6 +7,8 @@ public abstract class Flower {
     protected double neededArea;
     protected double chanceOfGrowth;
 
+    public abstract void water();
+
 
     public String toString() {
         return "flowers.Flower{" +

@@ -10,6 +10,13 @@ public class Daisy extends Flower{
     }
 
     @Override
+    public void water() {
+        if(chanceOfGrowth + 0.1 < 1){
+            chanceOfGrowth += 0.1;
+        }
+    }
+
+    @Override
     public String toString() {
         return "Daisy{" +
                 "name='" + name + '\'' +
